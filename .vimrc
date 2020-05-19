@@ -3,8 +3,12 @@ set nocompatible
 syntax on
 
 call plug#begin('~/.vim/plugged')
+Plug 'elmcast/elm-vim'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
+"" Plugin config
+" Plugin elm-vim
+let g:elm_format_autosave = 1
 
 "" Upgrading default vim
 " Hybrid line numbering
