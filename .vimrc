@@ -12,3 +12,7 @@ nmap <silent> <c-s-j> <C-W>j
 nmap <silent> <c-s-h> <C-W>h
 nmap <silent> <c-s-l> <C-W>l
 
+"" Templates
+" LaTeX
+nnoremap ,tex :-1read $HOME/.vim/templates/.latex.tex<CR>
+
