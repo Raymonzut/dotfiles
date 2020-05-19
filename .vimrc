@@ -2,6 +2,10 @@
 set nocompatible 
 syntax on
 
+call plug#begin('~/.vim/plugged')
+Plug 'wakatime/vim-wakatime'
+call plug#end()
+
 "" Upgrading default vim
 " Hybrid line numbering
 set number relativenumber
