@@ -16,3 +16,7 @@ nmap <silent> <c-s-l> <C-W>l
 " LaTeX
 nnoremap ,tex :-1read $HOME/.vim/templates/.latex.tex<CR>
 
+"" Automation
+" LaTeX make pdf on save
+autocmd BufWritePost *.tex silent! execute "!pdflatex --output-directory=./build % > /dev/null 2>&1" | redraw!
+
