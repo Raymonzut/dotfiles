@@ -1,14 +1,19 @@
 " Welcome in the current century
 set nocompatible 
+filetype plugin on
 syntax on
 
 call plug#begin('~/.vim/plugged')
 Plug 'elmcast/elm-vim'
+Plug 'vimwiki/vimwiki'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 "" Plugin config
 " Plugin elm-vim
 let g:elm_format_autosave = 1
+
+" Plugin vimwiki (for clarity)
+let g:vimwiki_list = [{'path': '~/vimwiki/'}]
 
 "" Upgrading default vim
 " Hybrid line numbering
