@@ -5,12 +5,16 @@ syntax on
 
 call plug#begin('~/.vim/plugged')
 Plug 'elmcast/elm-vim'
+Plug 'nanotech/jellybeans.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 "" Plugin config
 " Plugin elm-vim
 let g:elm_format_autosave = 1
+
+" Plugin jellybeans.vim
+colorscheme jellybeans
 
 " Plugin vimwiki (for clarity)
 let g:vimwiki_list = [{'path': '~/vimwiki/'}]
