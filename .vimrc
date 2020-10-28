@@ -4,15 +4,12 @@ filetype plugin on
 syntax on
 
 call plug#begin('~/.vim/plugged')
-Plug 'elmcast/elm-vim'
 Plug 'nanotech/jellybeans.vim'
+Plug 'vim-scripts/Vimclojure'
 Plug 'vimwiki/vimwiki'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 "" Plugin config
-" Plugin elm-vim
-let g:elm_format_autosave = 1
-
 " Plugin jellybeans.vim
 colorscheme jellybeans
 
@@ -37,3 +34,6 @@ nnoremap ,tex :-1read $HOME/.vim/templates/.latex.tex<CR>
 " LaTeX make pdf on save
 autocmd BufWritePost *.tex silent! execute "!pdflatex --output-directory=./build % > /dev/null 2>&1" | redraw!
 
+"" Clojure
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#ParenRainbow = 1
