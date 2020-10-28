@@ -33,6 +33,8 @@ nnoremap ,tex :-1read $HOME/.vim/templates/.latex.tex<CR>
 "" Automation
 " LaTeX make pdf on save
 autocmd BufWritePost *.tex silent! execute "!pdflatex --output-directory=./build % > /dev/null 2>&1" | redraw!
+" Haskell compiling and checking for improvements
+autocmd BufWritePost *.hs execute "!ghc --make % -Wall && hlint %"
 
 "" Clojure
 let vimclojure#HighlightBuiltins = 1
