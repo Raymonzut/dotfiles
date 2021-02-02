@@ -1,0 +1,7 @@
+[user]
+	email = 40148684+Raymonzut@users.noreply.github.com
+	name = Raymon Zutekouw
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = master
